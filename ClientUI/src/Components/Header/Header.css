@@ -205,3 +205,6 @@
     background-color: rgba(101, 140, 231, 0.087);
     cursor: pointer;
 }
+.HeaderSearchBtn:hover{
+    cursor: pointer;
+}
