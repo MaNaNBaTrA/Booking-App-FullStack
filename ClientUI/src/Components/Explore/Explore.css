@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+.EStates{
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* overflow: hidden; */
+}
+.Explore{
+    margin: 50px 0px;
+    width: 100%;
+    max-width: 1134px;
+}
+.ExploreTitle{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.ExploreHeading{
+    color: rgba(78, 76, 76, 0.885);
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.StateImg > *{
+    border-radius: 10px;
+}
+.StateName{
+    color: black;
+    font-weight: 500;
+    margin: 6px 0px;
+}
+.StateProperties{
+    font-size: 0.9rem;
+    color: rgba(78, 76, 76, 0.885);
+}
+.StateContainer{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.StateItem{
+    margin: 0 10px;
+}
+.StateContainer::-webkit-scrollbar{
+    color: transparent;
+}
+.StateBtn1 > *{
+    filter: invert(1);
+    color: black;
+    width: 7px;
+}
+.StateBtn2 > *{
+    filter: invert(1);
+    color: black;
+    width: 7px;
+}
+.StateBtn2{
+    right: -20px;
+    top: 25%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 8px 1px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: white;
+}
+.StateBtn1{
+    z-index: 2;
+    left: -20px;
+    top: 25%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 8px 1px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: white;
+}
+.StateBtn1,.StateBtn2:hover{
+    cursor: pointer;
+}
