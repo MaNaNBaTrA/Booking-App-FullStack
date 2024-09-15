@@ -20,11 +20,12 @@ const Home = () => {
         <Offers/>
         <Explore/>
         <Deals/>
+        <div className="homeTitle">Featured</div>
         <Featured/>
         <h1 className="homeTitle">Browse by property type</h1>
-        {/* <PropertyList/>
+        <PropertyList/>
         <h1 className="homeTitle">Homes guests love</h1>
-        <FeaturedProperties/> */}
+        <FeaturedProperties/>
       </div>
       <MailList/>
       <Footer/>

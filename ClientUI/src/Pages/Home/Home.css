@@ -12,3 +12,9 @@ body{
     flex-direction: column;
     margin-left: 180px;
 }
+.homeTitle{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 40px;
+}
