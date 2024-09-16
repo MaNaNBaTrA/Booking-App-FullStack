@@ -1,37 +1,41 @@
-import {useEffect, useState} from "react";
-import axios from "axios";
-const useFetch = (url)=>{
-    const [data,setdata] = useState([])
-    const [loading,setloading] = useState(false)
-    const [error,seterror] = useState(false)
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
+const useFetch = (url) => {
+    const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(null);
 
-    useEffect(()=>{
-        const FetchData = async ()=>{
-            setloading(true)
-            try{
+    useEffect(() => {
+        const fetchData = async () => {
+            setLoading(true);
+            setError(null); // Reset error before fetching
+            try {
                 const res = await axios.get(url);
-                setdata(res.data)
-            }catch(err){
-                seterror(err);
+                setData(res.data);
+            } catch (err) {
+                console.error('Error fetching data:', err.response?.data || err.message); // Log detailed error
+                setError(err);
             }
-            setloading(false)
-        }
-        FetchData();
-    },[url])
-    
-    const reFetchData = async ()=>{
-        setloading(true)
-        try{
+            setLoading(false);
+        };
+        fetchData();
+    }, [url]);
+
+    const reFetchData = async () => {
+        setLoading(true);
+        setError(null); // Reset error before fetching
+        try {
             const res = await axios.get(url);
-            setdata(res.data)
-        }catch(err){
-            seterror(err);
+            setData(res.data);
+        } catch (err) {
+            console.error('Error re-fetching data:', err.response?.data || err.message); // Log detailed error
+            setError(err);
         }
-        setloading(false)
+        setLoading(false);
     };
 
-    return {data,loading,error,reFetchData};
-}
+    return { data, loading, error, reFetchData };
+};
 
 export default useFetch;

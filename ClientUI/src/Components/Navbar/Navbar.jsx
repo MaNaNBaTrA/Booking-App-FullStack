@@ -1,16 +1,22 @@
 import React from 'react'
 import "./Navbar.css"
+import {Link} from "react-router-dom"
+import Icon from "/Svg/Booking.svg"
+import FlagIcon from "/Images/IndiaFlag.png"
+
 
 const Navbar = () => {
     return (
         <div className="Navbar">
-            <div className="icon">
-                <img src="Svg/Booking.svg" alt="" />
-            </div>
+            <Link to="/">
+                <div className="icon">
+                    <img src={Icon} alt="" />
+                </div>
+            </Link>
             <div className="right">
                 <span className="currency">INR</span>
                 <div className="country">
-                    <img src="Images/IndiaFlag.png" alt="" className="CountryImg"/>   
+                    <img src={FlagIcon} alt="" className="CountryImg" />
                 </div>
                 <div className="help">?</div>
                 <div className="List">List Your Property</div>

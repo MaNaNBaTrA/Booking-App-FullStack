@@ -86,7 +86,6 @@
     display: flex;
     background-color: white;
     padding: 10px 0px;
-    border-radius: 5px;
     position: absolute;
     bottom: -25px;
     margin-left: 190px;
@@ -101,6 +100,7 @@
     height: 50px;
     width: 100%;
     padding: 10px 10px 10px 20px;
+    z-index: 2;
 }
 .AngleDown{
     margin-left: 40px;
@@ -115,11 +115,11 @@
     cursor: pointer;
 }
 .HeaderSearchInput{
-    outline: none;
     border: none;
     width: 100%;
     color: black;
     font-size: 1rem;
+    text-align: start;
 }
 .HeaderSearchInput::placeholder{
     color: black;

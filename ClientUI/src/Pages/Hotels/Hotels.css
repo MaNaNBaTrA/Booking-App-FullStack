@@ -1,8 +1,9 @@
+
 .listContainer {
   display: flex;
-  /* justify-content: center; */
   margin-left: 190px;
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .listWrapper {
@@ -28,7 +29,6 @@ input {
   border-radius: 10px;
   outline: none;
   border: none;
-  text-align: center;
 }
 
 .lsTitle {
@@ -45,6 +45,14 @@ input {
   margin-bottom: 10px;
 }
 
+.DateRangeText{
+  position: relative;
+}
+.DateRangeSearch{
+  position: absolute;
+  bottom: -110px;
+}
+
 .lsItem>label {
   font-size: 12px;
 }
@@ -53,6 +61,12 @@ input {
   height: 30px;
   border: none;
   padding: 5px;
+  color: black;
+  text-align: start;
+}
+.lsItem>input::placeholder{
+  text-align: start;
+  color: black;
 }
 
 .lsItem>span {
@@ -79,6 +93,8 @@ input {
 
 .lsOptionInput {
   width: 50px;
+  color: black;
+  text-align: center;
 }
 
 .listSearch>button {

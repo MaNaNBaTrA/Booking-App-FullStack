@@ -31,10 +31,10 @@
 }
 .PosterHeading1{
     font-weight: 300;
-    color: black;
     font-size: 0.9rem;
     margin: 12px 0px;
     text-wrap: nowrap;
+    color: black;
 }
 .PosterHeading2{
     font-weight: 400;
