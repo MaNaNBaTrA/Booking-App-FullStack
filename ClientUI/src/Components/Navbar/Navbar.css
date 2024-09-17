@@ -63,3 +63,9 @@
     font-weight: 500;
     cursor: pointer;
 }
+.Username{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}

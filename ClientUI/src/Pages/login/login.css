@@ -12,6 +12,7 @@
   }
   
   .logininput{
+    border:1px solid black;
     height: 30px;
     padding: 10px;
     color: black;
@@ -31,3 +32,6 @@
     background-color: #0071c28c;
     cursor: not-allowed;
   }
+.ErrorMsg{
+  color: crimson;
+}
